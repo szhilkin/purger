@@ -12,6 +12,19 @@ log_filename: 'logs/purge.log'
 aggregator: NONPCI
 # Path to logfiles
 logpath: /logs
+# Default retention 
+retention: 90
 # Hosts
 hosts:
-- test retention: 90
+- hosts: 
+  group:
+   - test1
+   - test2
+   - test3 
+  retention: 90
+- hosts:
+  group:
+   - test4
+   - test5
+   - test6 
+  retention: 10
