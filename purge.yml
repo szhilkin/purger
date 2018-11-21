@@ -1,0 +1,17 @@
+# Loging level : DEBUG INFO ERROR
+loglevel: DEBUG
+# Log file size in Mb
+log_max_size: 100
+# How many log files to store
+log_max_backups: 10
+# Log file TTL
+log_max_age: 30
+# Path to logfile
+log_filename: 'logs/purge.log'
+# Role of aggregator : PCI/NONPCI
+aggregator: NONPCI
+# Path to logfiles
+logpath: /logs
+# Hosts
+hosts:
+- test retention: 90
